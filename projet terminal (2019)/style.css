@@ -1,0 +1,381 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("ablain_bg3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  margin: 15px;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background: rgba(0,0,0,.4);
+
+}
+.logo{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.nav-links li{
+  list-style: none;
+
+}
+
+section .box{
+  width: 40%;
+  height: 80%;
+  float: left;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+section .box .content{
+  color: #fff;
+  background: rgba(0,0,0,.5);
+  padding: 40px;
+  transition: .5s;
+}
+
+section .box .content h1{
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+section .events{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  float: right;
+  box-sizing: border-box;
+}
+
+section .events ul{
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+section .events ul li{
+  list-style: none;
+  background: #fff;
+  box-sizing: border-box;
+  height: 200px;
+  margin: 15px;
+}
+
+section .events ul li .time{
+  position: relative;
+  padding: 20px;
+  background: #262626;
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  transition: .5s;
+}
+
+section .events ul li:hover .time{
+  background: #9CD08F;
+}
+
+section .events ul li .time h2{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 60px;
+  line-height: 30px;
+}
+
+section .events ul li .time h2 span{
+  font-size: 30px;
+}
+
+section .events ul li .details{
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+
+section .events ul li .details h3{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+section .events ul li .details p{
+  position: relative;
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+section .events ul li .details a{
+  display: line-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 2px solid #262626;
+  margin-top: 12px;
+  font-size: 14px;
+  transition: .3s;
+  float: right;
+}
+
+section .events ul li .details a:hover{
+  background: #9CD08F;
+  color: #fff;
+  border-color: #9CD08F;
+}
+
+.form-style-1 {
+  margin: 100px auto;
+  max-width: 400px;
+  padding: 20px 12px 10px 20px;
+  background: rgba(0,0,0,.5);
+}
+
+.form-style-1 li {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 20px 0 0 0;
+}
+
+.form-style-1 label{
+  margin:0 0 3px 0;
+  padding:0px;
+  display:block;
+  color: #fff;
+}
+
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+
+select{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border:1px solid #BEBEBE;
+  padding: 7px;
+  margin:0px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;  
+}
+
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+
+}
+
+.form-style-1 .field-divided{
+  width: 49%;
+}
+
+.form-style-1 .field-long{
+  width: 100%;
+  padding: 5px;
+}
+
+.form-style-1 .field-select{
+  width: 100%;
+}
+
+.form-style-1 .field-textarea{
+  height: 100px;
+}
+
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+  background: rgb(0,0,0, .4);
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+}
+
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+  background: #9CD08F;
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+}
+
+.timer{
+  background: rgb(0,0,0, .5);
+  position: relative;
+  top: 300px;
+  left: 50px;
+  width: 40%;
+  height: 50%;
+}
+
+.timer p { 
+  position: relative;
+  font-size: 70px;
+  color: #fff;
+  text-align: center; 
+  padding: 100px;
+} 
+
+.contact {
+  width: 260px;
+  height: 310px;
+  position: relative;
+  background: rgb(0,0,0,.5);
+  top: 500px;
+  left: 130px;
+  bottom: 50px;
+}
+
+.contact h2{
+  color: #fff;
+  position: relative;
+  margin: 3px;
+  padding-left: 25%;
+
+}
+.contact p{
+  color: #fff;
+  padding-left: 13%;
+}
+
+.contact li {
+  color: #fff;
+  padding-left: 20%;
+
+}
+
+.alerte{
+  position: relative;
+  background: rgb(0,0,0, .5);
+  width: 400px;
+  height: 400px;
+  bottom: 300px;
+  left: 50px;
+}
+
+.alerte h1{
+  color: #fff;
+  text-align: center;
+}
+
+.alerte p{
+  color: #fff;
+  text-align: center;
+}
+
+.alerte video{
+  position: relative;
+  left: 10%;
+}
+
+.info{
+  background: rgb(0,0,0, .5);
+  width: 1200px; 
+  position: relative;
+  margin-left: 30%;
+  margin-top: -750px;
+
+}
+
+.info .evenement h3{
+  color: #fff;
+  margin: 10px;
+}
+
+.info .evenement p{
+  color: #fff;
+  margin: 10px;
+}
+
+.info .evenement ul li{
+  margin: 30px;
+}
+
+.info .evenement li{
+  background: #fff;
+}
+
+.info .evenement{
+  background: rgb(0,0,0, .6);
+  box-sizing: border-box;
+  margin: 25px 10px 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.history{
+  margin: 100px auto;
+  max-width: 1000px;
+  padding: 20px 12px 10px 20px;
+  background: rgba(0,0,0,.5);
+
+}
+
+.history h1{
+  color:#fff;
+}
+
+.history h2{
+  color:#fff;
+}
+
+.history ul li p{
+  color: #fff;
+}
+
+.image_chapelle{
+  text-align: center;
+  margin: 10px;
+}
